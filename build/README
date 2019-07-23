@@ -1,0 +1,18 @@
+git clone https://github.com/haiyuanhe/datadog.git --recursive
+
+本地环境准备:
+1. 安装虚拟环境
+    virtualenv --no-site-packages venv
+2. 安装requirement
+    如果使用idea 中的 python 需要
+    pip  install -r agent/requirements.txt
+    如果命令行中跑
+    pip  install -r agent/requirements.txt --target=/Users/hehaiyuan/workplace/datadog/lib
+    pip  install -r agent/requirements-opt.txt --target=/Users/hehaiyuan/workplace/datadog/lib
+
+3. 加入 datadog_check_base
+    pip install dist/*.whl --target=/Users/hehaiyuan/workplace/datadog/lib
+
+4. 启动
+     ./agent/agent.py foreground --use-local-forwarder
+

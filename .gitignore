@@ -22,8 +22,10 @@
 /dist/
 /nbdist/
 /.nb-gradle/
-/build/
+
 
 ### Cloudwiz ###
 /log/
 .log
+/lib/
+/venv/
