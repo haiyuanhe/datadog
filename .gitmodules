@@ -3,4 +3,4 @@
 	url = https://github.com/haiyuanhe/dd-agent
 [submodule "integrations-core"]
 	path = integrations
-	url = https://github.com/DataDog/integrations-core.git
+	url = https://github.com/haiyuanhe/integrations-core.git
