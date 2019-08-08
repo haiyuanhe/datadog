@@ -8,8 +8,8 @@ git clone https://github.com/haiyuanhe/datadog.git --recursive
     pip  install -r agent/requirements.txt
     如果命令行中跑
     pip  install -r agent/requirements.txt --target=/Users/hehaiyuan/workplace/datadog/lib
-    pip  install -r agent/requirements-opt.txt --target=/Users/hehaiyuan/workplace/datadog/lib
     #TODO  pycurl 不能安装
+    pip  install -r agent/requirements-opt.txt --target=/Users/hehaiyuan/workplace/datadog/lib
 
 3. 加入 datadog_check_base
     python setup.py bdist_wheel
@@ -37,6 +37,7 @@ pip install pymongo==3.5.1 --target=/Users/hehaiyuan/workplace/datadog/lib
 
 #spark 依赖:
 pip install beautifulsoup4==4.5.1 --target=/Users/hehaiyuan/workplace/datadog/lib
+#TODO
 pip install requests-kerberos==0.12.0 --target=/Users/hehaiyuan/workplace/datadog/lib
 
 #postgresql依赖:
@@ -47,18 +48,18 @@ pip install psycopg2-binary==2.7.5 --target=/Users/hehaiyuan/workplace/datadog/l
 
 #oracle 依赖:
 pip install cx_Oracle==6.0.1 --target=/Users/hehaiyuan/workplace/datadog/lib
+#TODO
 pip install JPype1==0.6.3 --target=/Users/hehaiyuan/workplace/datadog/lib
 pip install JayDeBeApi==1.1.1 --target=/Users/hehaiyuan/workplace/datadog/lib
 
-# elastic 安装:
-python setup.py bdist_wheel
-pip install integrations/elastic/dist/*.whl --target=/Users/hehaiyuan/workplace/datadog/lib
+#elastic 安装:
+修改了代码. 直接单独文件能够使用
 
 #nginx 安装:
-python setup.py bdist_wheel
-pip install integrations/elastic/dist/*.whl --target=/Users/hehaiyuan/workplace/datadog/lib
+修改了代码. 直接单独文件能够使用
 
 #sqlserver 安装:
+#TODO
 pip install pyodbc==4.0.22 --target=/Users/hehaiyuan/workplace/datadog/lib
 pip install adodbapi==2.6.0.7 --target=/Users/hehaiyuan/workplace/datadog/lib
 
