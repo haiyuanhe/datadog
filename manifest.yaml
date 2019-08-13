@@ -1,0 +1,5 @@
+description: datadog
+version: 5.32.2
+init_script:
+- python install.py
+
